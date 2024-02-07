@@ -1,0 +1,81 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.team-category {
+  margin-bottom: 30px;
+}
+
+.team-category h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.team-members {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+.member {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 180px; 
+  height: 180px; 
+}
+
+.member h3 {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .team {
+    flex-direction: row;
+  }
+  
+  .team-category {
+    margin-right: 20px;
+  }
+
+  .team-members {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .member {
+    flex: 0 1 calc(35% - 110px);
+  }
+}
+
+h1 {
+  display: inline-block;
+  background-color: crimson;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
+}
+
+h2 {
+  display: inline-block;
+  background-color: crimson;
+  border-radius: 5px;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+}
