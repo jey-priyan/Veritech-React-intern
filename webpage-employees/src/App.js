@@ -133,8 +133,8 @@ function App() {
      <h3> Meet Our Team</h3>
      <Team members={members} />
      <DevTeam members = {members} />
-     <image className='first-part' src= '/asset/pngegg.png' alt = 'book' width= '100px' height = '100px'/>
-     <SaleTeam members = {members} />
+     <SaleTeam members = {members} /><br/><br/>
+     <img className= 'last' src='/asset/left.png' alt='bookmark' width= '100px' height = '100px'/> 
      </div>
     </div>
   );
