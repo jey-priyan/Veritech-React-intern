@@ -27,17 +27,19 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
-}
+  }
 
 .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
+  
 }
 
 .App-title {
   font-size: 1.5em;
+  
 }
 
 .App-intro {
@@ -55,7 +57,7 @@
 
 .message-list {
   list-style-type: none;
-  border: 1px solid;
+  border: 5px solid;
   text-align: left;
   height: 240px;
   border-radius: 10px;
@@ -79,6 +81,10 @@ h2 {
 .input-group-append {
   border-radius: 10px;
   color: #2eb9ce !important;
+  
+}
+.input-group{
+  margin-top: 5px;
 }
 
 .submit-button {
@@ -125,7 +131,6 @@ h2 {
   margin-bottom: 0px;
   padding: 5px;
   border-radius: 5px;
-  display: flex;
 }
 
 .message-content {
@@ -135,12 +140,37 @@ h2 {
   max-width: 90%; /* Adjust maximum width as needed */
 }
 
-.message-list::-webkit-scrollbar {
-  width: 0; /* Set scrollbar width to zero */
-  height: 1; /* Set scrollbar height to zero */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 3px; /* Rounded corners of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
 }
  
 p{
   padding-inline: 5px;
   margin-bottom: 0;
+}
+
+.user{
+  font-size: small;
+  color: #222;
+  margin-left: 3px;
+}
+.text{
+  display: inline-block;
+  background-color: #019ad2;
+  color: azure;
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Optional: add rounded corners */
+  max-width: 80%; /* Limit width of the container */
+  word-wrap: break-word;
 }

@@ -14,7 +14,14 @@ const MessageListing =(props)=> {
                         message.username === user.username ? 'message sender' : 'message recipient'
                     }
                 >
-                    <p>{`${message.username}: ${message.text}`}</p>
+                    <div className='user'>
+                        {message.username}
+                    </div>
+                    <div className='text'>
+                        {message.text}
+                    </div>
+                    {/* <p>{`${message.username}`} </p> <br/> */}
+                    {/* <p> {`${message.text}`}</p> */}
                 </li>
             ))}
         </ul>

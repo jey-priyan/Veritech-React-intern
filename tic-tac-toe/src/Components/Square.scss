@@ -1,0 +1,58 @@
+.square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #FF55BB;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    span {
+        display: block;
+        position: relative;
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        &.x::after,
+        &.x::before {
+            position: absolute;
+            content: "";
+            width: 150%;
+            height: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            background: #62fffc;
+            border-radius: 5px;
+            animation: glow 5s ease-in infinite alternate;
+        }
+
+        @keyframes glow {
+          0% {
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+          }
+          100% {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+          }
+        }
+
+        &.x::after {
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 1;
+        }
+
+        &.o {
+            border-color: #ffa02e;
+            animation: glow 5s ease-in infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+              box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Start color and shadow */
+            }
+            100% {
+              box-shadow: 0 0 20px rgba(248, 203, 2, 0.822); /* End color and shadow */
+            }
+          }
+    }
+}
